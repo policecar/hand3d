@@ -58,8 +58,6 @@ if __name__ == '__main__':
     imsh = ax.imshow(np.zeros((240, 320, 3), dtype=np.uint8))
     plt.show()
 
-    lines = []
-
     # Feed live camera image to network
     while True:
 
@@ -87,7 +85,7 @@ if __name__ == '__main__':
 
         # plot the full image
         imsh.set_data(image_raw)  # plot the camera image`
-        lines = plot_hand(coord_hw, ax)  # plot the hand stick figure
+        plot_hand(coord_hw, ax)  # plot the hand stick figure
 
         # # plot the cropped image
         # imsh.set_data(image_crop_v)  # plot the camera image`
