@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
         # plot the full image
         imsh.set_data(image_raw)  # plot the camera image`
-        lines = plot_hand(coord_hw, ax, lines=lines)  # plot the hand stick figure
+        lines = plot_hand(coord_hw, ax)  # plot the hand stick figure
 
         # # plot the cropped image
         # imsh.set_data(image_crop_v)  # plot the camera image`
